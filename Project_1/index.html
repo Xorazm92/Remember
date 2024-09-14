@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/main.css"/>
+    <title>Registration</title>
+</head>
+<body>
+   
+    
+    <div class="container">
+        <h1 class="header">Registration</h1>
+        <form class="form">
+            <div>
+                <table class="tablit">
+                    <tbody>
+                    <tr>
+                        <th class="nomlar">Full Name</th>
+                        <th class="nomlar">Username</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="enter_name" class="label">
+                                <input type="text" id="enter_name" placeholder="Enter your name">
+                            </label> 
+                        </td>
+                        <td>
+                            <label for="enter_username" class="label">
+                                <input type="text" id="enter_username" placeholder="Enter your username">
+                            </label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="nomlar">Email</th>
+                        <th class="nomlar">Phone Number</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="enter_email" class="label">
+                                <input type="email" id="enter_email" placeholder="Enter your email">
+                            </label>   
+                        </td>
+                        <td>
+                            <label for="enter_phone" class="label">
+                                <input type="number" id="enter_phone" placeholder="Enter your number">
+                            </label>               
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="nomlar">Password</th>
+                        <th class="nomlar">Confirm Password</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="enter_password" class="label">
+                                <input type="password" id="enter_password" placeholder="Enter your password">
+                            </label> 
+                        </td>
+                        <td>
+                            <label for="enter_confirm" class="label">
+                                <input type="password" id="enter_confirm" placeholder="Confirm your password">
+                            </label> 
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+            <div>
+                <label>Gender</label>
+                <div class="genderi">
+                    
+                    <input type="radio" name="gender" value="male" class="">
+                    <label for="male" class="jins">Male</label>
+                    <input type="radio" name="gender" value="female">                
+                    <label for="female" class="jins">Female</label>
+                    <input type="radio" name="gender" value="Prefer not to say">                
+                    <label for="Prefer not to say" class="jins">Prefer not to say</label>
+                </div>
+            </div>    
+            
+            <button type="submit" class="buttonniki">Register</button> 
+            
+
+        </form>   
+    </div>   
+    
+    
+</body>
+</html>
