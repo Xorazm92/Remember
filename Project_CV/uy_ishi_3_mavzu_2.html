@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Land Of Boxes Order Form</title>
+    <style>
+
+        label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Land Of Boxes Order Form</h1>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email"><br>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4"
+        style="resize: vertical; overflow-y: scroll; "></textarea><br>
+
+        <label for="postcode">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" placeholder="Enter code"><br>
+
+        <table border="1">
+            <tr>
+                <th>Product</th>
+                <th>Part Number</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>EconoBox</td>
+                <td>LB100</td>
+                <td><input type="number" value="3" min="0"></td>
+                <td>$5</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>Standard Box</td>
+                <td>LB200</td>
+                <td><input type="number" value="2" min="0"></td>
+                <td>$10</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Premium Box/TD></td>
+                <td>LB300</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td>$15</td>
+                <td>$15</td>
+            </tr>
+            <tr>
+                <td>Deluxe Box/TD></td>
+                <td>LB400</td>
+                <td><input type="number" value="0" min="0"></td>
+                <td>$20</td>
+                <td>$0</td>
+            </tr>
+            <tr>
+                <td>Super Deluxe Box/TD></td>
+                <td>LB500</td>
+                <td><input type="number" value="1" min="0"></td>
+                <td>$30</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: right;"><strong>Total:</strong></td>
+                <td>$100</td>
+            </tr>
+        </table>
+
+        <fieldset>
+            <legend>Credit Card Details</legend>
+            <label>Card Type:</label><br>
+            <input type="radio" id="mastercard" name="cardType" value="mastercard" checked>
+            <label for="mastercard">Mastercard</label><br>
+            <input type="radio" id="visa" name="cardType" value="visa">
+            <label for="visa">Visa</label><br>
+            <input type="radio" id="amex" name="cardType" value="amex">
+            <label for="amex">American Express</label><br>
+            <input type="radio" id="diners" name="cardType" value="diners">
+            <label for="diners">Diners Club</label><br>
+
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter PIN"><br>
+
+            <label for="expiryDate">Expiry date:</label>
+            <input type="text" id="expiryDate" name="expiryDate" placeholder="Enter term"">
+        </fieldset>
+
+        <label for="deliveryAddress">Delivery Address:</label>
+        <textarea id="deliveryAddress" name="deliveryAddress" rows="3"
+        style="resize: vertical; overflow-y: scroll;"></textarea><br>
+
+        <div class="buttons">
+            <button type="submit">Send order</button>
+            <button type="reset">Clear form</button>
+        </div>
+    </form>
+</body>
+</html>
